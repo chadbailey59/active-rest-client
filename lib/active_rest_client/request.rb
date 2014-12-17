@@ -409,7 +409,8 @@ module ActiveRestClient
     private
 
     def is_json_response?
-      @response.headers['Content-Type'].nil? || @response.headers['Content-Type'].include?('json')
+      # @response.headers['Content-Type'].nil? || @response.headers['Content-Type'].include?('json')
+      true # bitch
     end
 
     def generate_new_object(options={})
